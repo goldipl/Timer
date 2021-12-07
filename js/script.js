@@ -5,11 +5,21 @@ const startElement = document.getElementById('start');
 minutesElement.value = 0;
 secondsElement.value = 0;
 
-start = () => {
-
+disabledInterface = () => {
     minutesElement.setAttribute('disabled', 'yes');
     secondsElement.setAttribute('disabled', 'yes');
     startElement.setAttribute('disabled', 'yes');
+};
+
+undisabledInterface = () => {
+    minutesElement.removeAttribute('disabled');
+    secondsElement.removeAttribute('disabled');
+    startElement.removeAttribute('disabled');
+};
+
+start = () => {
+
+    disabledInterface();
 
     let seconds = Number(minutesElement.value) * 60 + Number(secondsElement.value);
     //2nd version
@@ -18,16 +28,12 @@ start = () => {
     const intervalRef = setInterval(() => {
         if (seconds === 0) {
             clearInterval(intervalRef);
-            minutesElement.removeAttribute('disabled');
-            secondsElement.removeAttribute('disabled');
-            startElement.removeAttribute('disabled');
+            undisabledInterface();
         } else {
             seconds -= 1;
-
             minutesElement.value = Math.floor(seconds / 60);
             secondsElement.value = Math.floor(seconds % 60);
         }
-
     }, 1000);
 }
 
