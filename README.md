@@ -1,6 +1,7 @@
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
+* [Screen](#screen)
 * [Live](#live)
 
 ## General info
@@ -11,6 +12,9 @@ Project was created with:
 * HTML5
 * CSS3
 * Javascript
+
+## Screen
+[screen](Timer.png)
 
 ## Live :star2:
 https://goldipl.github.io/Timer/
