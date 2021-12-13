@@ -14,7 +14,7 @@ Project was created with:
 * Javascript
 
 ## Screen
-[screen](Timer.png)
+![Screenshot](Timer.png)
 
 ## Live :star2:
 https://goldipl.github.io/Timer/
