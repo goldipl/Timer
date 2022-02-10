@@ -49,3 +49,7 @@
 .timerContainer button:hover {
     background-color: #f69d3c;
 }
+
+.timerContainer button[disabled]:hover {
+    background-color: #a09e9e;
+}
