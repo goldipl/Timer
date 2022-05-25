@@ -53,3 +53,10 @@
 .timerContainer button[disabled]:hover {
     background-color: #a09e9e;
 }
+
+section#timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
